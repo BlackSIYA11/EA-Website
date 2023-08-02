@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Evelyn Arts - Art on everything</title>
+    <meta name="description" content="Our art is dedicated to providing unique and creative works of art that will inspire and captivate.We offer a range of services including designing and customizing clothes and shoes, creating apple and Spotify music glass plaques, and many more.Explore our website to learn more about our business.Learn More.EA.black-owned business"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="_images/favicon.ico">
+</head>
+<body id="home">
+    <header>
+        <div class="logo-container">
+            <img src="_images/ea logo.png" width="50" height="50" class="logo">
+        </div>
+        <nav class="navMenu">
+            <ul>
+                <li class="Current">HOME</li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@evelyn7.m?_t=8aVJVBLM9xO&_r=1" target="_blank"><img src="_images/Tiktok icon.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="_images/Insta black Icon.jpg" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <main>
+        <h1 style="font-family: 'Courier New', Courier, monospace;">Welcome to EA</h1>
+        <div class="art-container">
+            <div class="art-image">
+                <img src="_images/Face art.webp" width="150" height="150" alt="Art Image">
+            </div>
+            <div class="art-text">
+                <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">ART ON EVERYTHING</p>
+                <p>Our art is dedicated to providing unique and creative works of art that will inspire and captivate.</p>
+                <p>We offer a range of services including designing and customizing clothes and shoes, creating apple and Spotify music glass plaques, and many more.</p>
+                <p>Explore our website to learn more about our business.</p>
+                <div class="learn-more-button">
+                    <a href="about.html"><button>Learn More</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="newsletter-form">
+            <h3>Receive Newsletter</h3>
+           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3q0nsIn5DirCNnhg7lsfiCsL1D0cW7EojMJ3zd5z1EU9_Sw/viewform?embedded=true" width="540" height="595" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <p class="footer-text">EA.black-owned business | <span id="dateStamp"></span></p>
+        <script LANGUAGE="Javascript">
+            var stampdays = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+            var stampmonths = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+            var thedate = new Date();
+            document.getElementById("dateStamp").innerHTML = stampdays[thedate.getDay()] + ", " + stampmonths[thedate.getMonth()] + " " + thedate.getDate() + ", " + thedate.getFullYear();
+        </script>
+    </footer>
+</body>
+</html>

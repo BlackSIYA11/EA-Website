@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | EA - Music Glass Plaques, Custom Clothing, Secret Messages, Bracelets, and More. </title>
+    <meta name="description" content="Discover the wide range of services offered by EA, a black-owned business. We specialize in music glass plaques, custom clothing and shoes, secret messages, and personalized bracelets. Explore our artistic creations and unique gifts.">
+    <link rel="stylesheet" href="styles.css">
+     <link rel="icon" type="image/png" sizes="32x32" href="_images/favicon.ico">
+</head>
+<body id="services-page">
+    <header>
+        <div class="logo-container">
+            <img src="_images/ea logo.png" width="50" height="50" class=" EA logo">
+        </div>
+        <nav class="navMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="Current">SERVICES</li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@evelyn7.m?_t=8aVJVBLM9xO&_r=1" target="_blank"><img src="_images/Tiktok icon.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="_images/Insta black Icon.jpg" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Products and Services</h1>
+        <div class="video-container">
+            <div>
+                <p>We design and create Apple and Spotify music glass plaques.</p>
+                <p>We design and customize clothes and shoes to suit your needs.</p>
+                <p>If you want to send a secret message to your special someone, we can do it for you.</p>
+                <p>We make custom bracelets for you and your special someone.</p>
+                <p>ANYTHING ART and GIFTS COME TO US WE ALWAYS HAVE SOMETHING FOR YOU.</p>
+            </div>
+            <iframe width="1400" height="100" src="https://www.youtube.com/embed/Ky8EnjZjsGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="footer-text">EA.black-owned business | <span id="dateStamp"></span></p>
+        <script LANGUAGE="Javascript">
+            var stampdays = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+            var stampmonths = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+            var thedate = new Date();
+            document.getElementById("dateStamp").innerHTML = stampdays[thedate.getDay()] + ", " + stampmonths[thedate.getMonth()] + " " + thedate.getDate() + ", " + thedate.getFullYear();
+        </script>
+    </footer>
+</body>
+</html>

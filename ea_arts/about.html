@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | EA - Music Glass Plaques, Clothing, and Shoes" </title>
+    <meta name="description" content="Discover EA, a black-owned business specializing in music glass plaques, clothing, and shoes."/>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="icon" type="image/png" sizes="32x32" href="_images/favicon.ico">
+</head>
+<body id="about-page">
+    <header>
+        <div class="logo-container">
+            <img src="_images/ea logo.png" width="50" height="50" class="logo" alt="EA logo">
+        </div>
+        <nav class="navMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="Current">ABOUT US</li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@evelyn7.m?_t=8aVJVBLM9xO&_r=1" target="_blank"><img src="_images/Tiktok icon.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="_images/Insta black Icon.jpg" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <main>
+        <h1>ABOUT US</h1>
+        <div class="content">
+            <div class="text">
+                <dl>
+                    <dt>EA</dt>
+                    <dd>A black-owned business that is run by a female entrepreneur who saw an opportunity in society to start a business that designs and creates different types of music glass plaques. Through her love for art, she recognized the potential for her business to grow and decided to venture into designing clothes and shoes for people. Our mission as a business is to showcase that art goes beyond traditional drawing and painting, and can be incorporated into music glass plaques, clothes, and shoes. The slogan "Art on everything" is to show that art is not just in museums but it is in our daily lives, for example, the clothes we wear.</dd>
+                </dl>
+            </div>
+            <div class="image">
+                <img src="_images/Eve sketch.jpg" width="200" height="200" alt="Eve Sketch image">
+                <img src="_images/rose.png" width="200" height="200" alt="Rose Image">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-text">EA.black-owned business | <span id="dateStamp"></span></p>
+        <script LANGUAGE="Javascript">
+            var stampdays = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+            var stampmonths = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+            var thedate = new Date();
+            document.getElementById("dateStamp").innerHTML = stampdays[thedate.getDay()] + ", " + stampmonths[thedate.getMonth()] + " " + thedate.getDate() + ", " + thedate.getFullYear();
+        </script>
+    </footer>
+</body>
+</html>

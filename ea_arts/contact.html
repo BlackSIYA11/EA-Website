@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EA</title>
+    <meta name="description" content="Contact EA for inquiries and more information. Find our contact details and operating hours.">
+    <meta name="keywords" content="contact us, EA contact, email, phone, operating hours">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="_images/favicon.ico">
+</head>
+<body id="contact-page">
+    <header>
+        <div class="logo-container">
+            <img src="_images/ea logo.png" width="50" height="50" class="logo" alt="EA logo">
+        </div>
+        <nav class="navMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="Current">CONTACT US</li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@evelyn7.m?_t=8aVJVBLM9xO&_r=1" target="_blank"><img src="_images/Tiktok icon.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="_images/Insta black Icon.jpg" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-container">
+          <h1>Contact Us</h1>
+          <h2>For more inquiries, get in touch with us</h2>
+          <p>Our contact details:</p>
+          <p class="cell-number">
+            <i class="fas fa-phone cell-icon"></i> Cell Number: +27 67 039 6503
+          </p>
+          <p>
+            <a href="mailto:evelynmunangati76@gmail.com">
+              <i class="fas fa-envelope email-icon"></i>Email: evelynmunangati76@gmail.com
+            </a>
+          </p>
+          <p>Operating Hours: 09:00 - 18:00</p>
+          <p>Mondays - Thursday</p>
+        </div>
+        <div class="contact-form-container">
+          <form name="myForm" action="mailto:evelynmunangati76@gmail.com" onsubmit="return validateForm()" method="post">
+          </form>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1211.8578689513024!2d27.985535595383247!3d-26.21597419530615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9509637f08e0fd%3A0x6cbb98f7146c539c!2s1692%20Sandpiper%20Cres%2C%20Riverlea%2C%20Johannesburg%2C%202093!5e0!3m2!1sen!2sza!4v1684266025450!5m2!1sen!2sza" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100" height="100"></iframe>
+      </main>
+
+    <div class="container">
+        <form name="myForm" action="mailto:evelynmunangati76@gmail.com" onsubmit="return validateForm()" method="post">
+            <label for="fname">First Name*</label>
+            <input type="text" id="fname" value="First Name" onclick="this.value=''" onBlur="if(this.value == '') {this.value = 'First name' }" name="firstname" required>
+            <label for="lname">Last Name*</label>
+            <input type="text" id="lname" value="last Name" onclick="this.value=''" onBlur="if(this.value == '') {this.value ='Last name' }" name="lastname" required>
+            <label for="emailaddress">Email Address*</label>
+            <input type="text"  id="emailaddress" value="Email Address" onclick="this.value=''" onBlur="if(this.value == '') {this.value = 'emailaddress' }" name="Email address" required>
+            <label for="comment/message">Comment/Message*</label>
+            <textarea id="subject" value="Write something..." onclick="this.value=''" onBlur="if(this.value == '') {this.value = 'Write something...' }" name="subject" style="height:200px" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var fname = document.forms["myForm"]["fname"].value;
+            var lname = document.forms["myForm"]["lname"].value;
+            var email = document.forms["myForm"]["emailaddress"].value;
+            var message = document.forms["myForm"]["subject"].value;
+    
+            if (fname === "") {
+                alert("Please provide your first name");
+                document.forms["myForm"]["fname"].focus();
+                return false;
+            }
+            if (lname === "") {
+                alert("Please provide your last name");
+                document.forms["myForm"]["lname"].focus();
+                return false;
+            }
+            if (email === "") {
+                alert("Please provide your email address");
+                document.forms["myForm"]["emailaddress"].focus();
+                return false;
+            }
+            if (message === "" || message === "Write something...") {
+                alert("Please provide your comment or message");
+                document.forms["myForm"]["subject"].focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+    
+    <footer>
+        <p class="footer-text">EA.black-owned business| <span id="dateStamp"></span></p>
+        <script LANGUAGE="Javascript">
+            var stampdays = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+            var stampmonths = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+            var thedate = new Date();
+            document.getElementById("dateStamp").innerHTML = stampdays[thedate.getDay()] + ", " + stampmonths[thedate.getMonth()] + " " + thedate.getDate() + ", " + thedate.getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
